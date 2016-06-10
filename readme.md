@@ -79,6 +79,43 @@ Try playing with `decodeURIComponent()`.
 
 ## Creating and Submitting Forms
 
-[HTML Forms Practice](https://github.com/ga-wdi-exercises/html-forms-practice)
+[HTML Forms Practice](http://ga-wdi-exercises.github.io/html-forms-practice/index.html)
+
+### Questions
+
+<details>
+<summary>What are the 4 different values for the `type` attribute you've seen?</summary>
+`radio`, `checkbox`, `text`, `submit`
+</details>
+
+<details>
+<summary>On what 2 elements can the `checked` attribute be used?</summary>
+`input type="radio"`, `input type="checkbox"`
+</details>
+
+<details>
+<summary>On what 1 element can the `selected` attribute be used?</summary>
+`<option>`
+</details>
+
+<details>
+<summary>What 2 elements are necessary to make a dropdown menu?</summary>
+`<select>` and `<option>`
+</details>
+
+<details>
+<summary>What other attribute does the `for` attribute correspond to?</summary>
+The value of `for` must be the ID of an element.
+</details>
+
+<details>
+<summary>What's the difference between `name` and `value`?</summary>
+When you submit a form, the data is sent as key/value pairs. `name` is the key. For instance, if you submit a form with `<input name="color" value="red" />` the data will contain `color=red`.
+</details>
+
+<details>
+<summary>For what elements is there a `[]` in the name? Why is it necessary?</summary>
+The elements that allow multiple answers for one field have `[]`. This is array notation, because the elements have an array of values.
+</details>
 
 ## GET vs POST
