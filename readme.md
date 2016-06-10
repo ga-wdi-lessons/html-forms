@@ -123,7 +123,7 @@ The `method` attribute on the `<form>` element can have one of two values: `get`
 
 ### What's the difference?
 
-Clone down the [HTTP Forms Practice repo](https://github.com/ga-wdi-exercises/html-forms-practice), or just copy its HTML source into an `index.html` on your computer.
+Clone down the [HTML Forms Practice repo](https://github.com/ga-wdi-exercises/html-forms-practice), or just copy its HTML source into an `index.html` on your computer.
 
 On the `<form>` element, change the `method` to `post` and submit the form.
 
@@ -169,3 +169,21 @@ Your web browser can communicate with a server in several ways, like you can com
 The whole system of browsers communicating with servers is called "HTTP" (HyperText Transfer Protocol). GET and POST are two ways of communicating within that system.
 
 There are several other HTTP methods, which we'll see later. `<form>` elements can only either GET or POST.
+
+## Styling Forms
+
+Adding CSS to your forms can be extremely important for a good UI.
+
+- Using your form, find out what each of the following CSS selectors does, and why they might be useful?
+
+```
+:checked
+:focus
+[type="something"]
+input + label
+input:checked + label
+```
+
+- Which elements **can't** really be styled with CSS?
+
+### You Do: [Cat Fancy](https://github.com/ga-wdi-exercises/cat_fancy)
