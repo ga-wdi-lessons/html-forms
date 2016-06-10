@@ -2,10 +2,9 @@
 
 ## Learning Objectives
 
-- Querystrings
-- GET vs POST
-- Elements and attributes
-- Targeting checked elements with CSS
+- Encode and decode a querystring
+- Explain the differences between GET and POST
+- Identify common HTML elements and attributes used to send data
 
 ## Framing
 
@@ -119,3 +118,54 @@ The elements that allow multiple answers for one field have `[]`. This is array 
 </details>
 
 ## GET vs POST
+
+The `method` attribute on the `<form>` element can have one of two values: `get` or `post`.
+
+### What's the difference?
+
+Clone down the [HTTP Forms Practice repo](https://github.com/ga-wdi-exercises/html-forms-practice), or just copy its HTML source into an `index.html` on your computer.
+
+On the `<form>` element, change the `method` to `post` and submit the form.
+
+- What's different from when the `method` was `get`?
+- After submitting the form, try refreshing the page. Does anything pop up?
+
+Leaving the `method` as `post`, change the `action` to `http://putsomethinghere.com/post.php`.
+
+> This is a blank site I own but am currently not doing anything with.
+
+Submit the form again.
+
+- What do you see?
+
+Leaving the `action`, change the `method` back to `get` and submit the form.,
+
+- What do you see?
+- What's different from when the `method` was `get`?
+- Refresh the page. Does anything pop up?
+
+Leaving the `method`, change the `action` to `http://putsomethinghere.com/get.php` and submit the form.
+
+- What do you see?
+- Refresh the page. Does anything pop up?
+
+In your browser go to http://putsomethinghere.com/get.php . Type in a querystring (and don't forget the leading `?`).
+
+- What happens?
+
+### So what *is* the difference?
+
+`GET` sends data as a querystring in your URL. `POST` hides the data when it's sent.
+
+- Why might this distinction be useful?
+- In what situations would having data in the querystring be useful? (Hint: Think back to the first part of this class.) When would it be *bad*?
+- In what situations would having hidden data be useful?
+- What do the **English words** "get" and "post" mean **in English**?
+
+### HTTP methods
+
+Your web browser can communicate with a server in several ways, like you can communicate with another person by whispering, shouting, sending a letter, or sending a text.
+
+The whole system of browsers communicating with servers is called "HTTP" (HyperText Transfer Protocol). GET and POST are two ways of communicating within that system.
+
+There are several other HTTP methods, which we'll see later. `<form>` elements can only either GET or POST.
