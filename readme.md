@@ -48,11 +48,12 @@ Go back to Google and search for a complete sentence with punctuation in it. For
 
 > I like bananas, coconuts, & grapes.
 
-- What happens to the punctuation?
+- What happens to the punctuation in the querystring?
 
 Search for `!-_/?#&`.
 
-- Which punctuation marks stay the same in the URL? Which don't? Why is this necessary?
+- Which punctuation marks stay the same in the URL? Which don't?
+- Why might this be necessary?
 
 Open up the browser console and type:
 
@@ -60,7 +61,7 @@ Open up the browser console and type:
 encodeURIComponent("!-_/?#&");
 ```
 
-- How is this similar to the Google URL?
+- How does the treatment of punctuation here compare to the same in Google's URL?
 
 Try it again with a complete sentence:
 
@@ -68,11 +69,15 @@ Try it again with a complete sentence:
 encodeURIComponent("I like bananas, coconuts, & grapes.");
 ```
 
-- How is this different from the Google URL?
+- How does this compare?
 
 <!-- The spaces are percent-encoded -->
 
 Try playing with `decodeURIComponent()`.
+
+- `encode` is of course the opposite of `decode`. So we can assume that where `encodeURIComponent` percent-encodes things, `decodeURIComponent` does... what?
+
+> What's the difference between a URI and a URL? A URI is a string that identifies *something* -- not necessarily a computer-ish thing -- in a standard way. There are two types of URIs: URLs (Locator) and URNs (Name). URNs are a new concept and rarely-used. In web development, you're usually referring to URLs. [More info.](https://danielmiessler.com/study/url-uri/)
 
 ## Creating and Submitting Forms
 
@@ -120,6 +125,8 @@ The elements that allow multiple answers for one field have `[]`. This is array 
 The `method` attribute on the `<form>` element can have one of two values: `get` or `post`.
 
 ### What's the difference?
+
+**Disclaimer: We'll cover this in greater depth later.**
 
 Clone down the [HTML Forms Practice repo](https://github.com/ga-wdi-exercises/html-forms-practice), or just copy its HTML source into an `index.html` on your computer.
 
@@ -172,7 +179,7 @@ There are several other HTTP methods, which we'll see later. `<form>` elements c
 
 Adding CSS to your forms can be extremely important for a good UI.
 
-- Using your form, find out what each of the following CSS selectors does, and why they might be useful?
+Consider these CSS selectors:
 
 ```
 :checked
@@ -182,6 +189,8 @@ input + label
 input:checked + label
 ```
 
+- What does each do?
+- What's an example of when you might use each?
 - Which elements **can't** really be styled with CSS?
 
 ### You Do: [Cat Fancy](https://github.com/ga-wdi-exercises/cat_fancy)
