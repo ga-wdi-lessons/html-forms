@@ -16,12 +16,15 @@ If you use Reddit's search bar to search for "cats" you're taken to a URL like t
 
 [www.reddit.com/search?sort=relevance&t=month&q=cats](https://www.reddit.com/search?sort=relevance&t=month&q=cats)
 
-- What do you think the `q` stands for? (It's two syllables.)
+- What do you think the `q` stands for? (Hint: It's a two-syllable word starting with "q".)
 - What seems to be the purpose of the text after the `?`?
 - Try changing what comes after `q=`. What happens?
-- Google something. What does the URL look like?
 
-Finally, go to the [Project 1 Gallery repo](https://github.com/ga-dc/project1-gallery) and click the "Submit your project here." link.
+Google something.
+
+- What does the URL look like?
+
+Finally, go to the [Project 1 Gallery repo](https://github.com/ga-dc/project1-gallery) and click the "Submit your project here." link (but don't actually submit a project).
 
 - What do you notice about the URL?
 - What happens if you add `?body=banana` to the end?
